@@ -2,6 +2,10 @@
   "name": "rapidus-connect-logger",
   "version": "0.0.2",
   "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keis/rapidus-connect-logger.git"
+  },
   "scripts": {
     "test": "mocha --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit"
   },
