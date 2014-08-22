@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('coverage', function () {
         var done = this.async(),
-            proc = exec('node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit');
+            proc = exec('node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit test/component');
 
         proc.stdout.on('data', function (chunk) { grunt.log.write(chunk); });
         proc.stderr.on('data', function (chunk) { grunt.log.write(chunk); });
