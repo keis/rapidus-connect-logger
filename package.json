@@ -10,7 +10,7 @@
     "test": "mocha --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit test/component"
   },
   "peerDependencies": {
-    "rapidus": "^0.2.0"
+    "rapidus": "^0.3.0"
   },
   "devDependencies": {
     "chai": "~1.9.1",
