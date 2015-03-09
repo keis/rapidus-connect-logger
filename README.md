@@ -1,9 +1,10 @@
 # rapidus-connect-logger
-access logs for connect in rapidus
 
 [![NPM Version][npm-image]](https://npmjs.org/package/rapidus-connect-logger)
 [![Build Status][travis-image]](https://travis-ci.org/keis/rapidus-connect-logger)
 [![Coverage Status][coveralls-image]](https://coveralls.io/r/keis/reload-reload?branch=master)
+
+access logs for connect in rapidus
 
 > As I cuddled the porcupine
 
