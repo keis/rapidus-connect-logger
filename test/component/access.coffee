@@ -25,8 +25,11 @@ describe "access-logger", ->
 
         record = null
 
-        logger.addSink (r) ->
+        sink = new rapidus.Sink
+        sink.write = (r) ->
             record = r
+
+        logger.addSink sink
 
         verify = ->
             assert.propertyVal record, 'url', '/zoidberg'

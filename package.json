@@ -19,7 +19,7 @@
     "docs": "docco lib/*.js"
   },
   "peerDependencies": {
-    "rapidus": "^0.3.0"
+    "rapidus": "^0.4.0"
   },
   "devDependencies": {
     "billom": "^1.0.2",
@@ -30,7 +30,7 @@
     "docco": "^0.7.0",
     "istanbul": "^0.3.0",
     "mocha": "^2.2.0",
-    "rapidus": "^0.3.0",
+    "rapidus": "^0.4.0",
     "sinon": "^1.13.0",
     "supertest": "^0.15.0"
   },
