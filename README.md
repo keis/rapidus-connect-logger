@@ -6,6 +6,31 @@
 
 access logs for connect in rapidus
 
+## Installation
+
+```bash
+npm install --save rapidus-connect-logger
+```
+
+## Usage
+
+Wrapping an existing logger object
+
+```javascript
+var accessLog = require('rapidus-connect-logger')
+var logger = require('rapidus').getLogger('access')
+
+app.use(accessLog(logger))
+```
+
+Creating a new logger and adding it to the hierarchy
+
+```javascript
+var logger = require('rapidus-connect-logger').createLogger('access')
+app.use(logger.middleware)
+require('rapidus').manageLogger(logger)
+```
+
 > As I cuddled the porcupine
 
 
