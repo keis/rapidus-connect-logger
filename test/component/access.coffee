@@ -1,7 +1,8 @@
 sinon = require 'sinon'
-rapidus = require 'rapidus'
 request = require 'supertest'
 connect = require 'connect'
+Logger = require 'mlogy'
+Sink = require 'record-sink'
 
 describe "access-logger", ->
     accessLog = require '../../lib/'
@@ -12,8 +13,7 @@ describe "access-logger", ->
     beforeEach ->
         app = connect()
 
-        hier = rapidus.createHierarchy()
-        logger = hier.getLogger()
+        logger = new Logger
 
         accessLog
             logger: logger
@@ -25,7 +25,7 @@ describe "access-logger", ->
 
         record = null
 
-        sink = new rapidus.Sink
+        sink = new Sink
         sink.write = (r) ->
             record = r
 
