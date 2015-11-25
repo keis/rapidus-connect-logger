@@ -1,6 +1,6 @@
 {
   "name": "rapidus-connect-logger",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "./lib",
   "author": "David Keijser <keijser@gmail.com>",
   "license": "MIT",
