@@ -31,6 +31,14 @@ app.use(logger.middleware)
 require('rapidus').manageLogger(logger)
 ```
 
+## Changes
+
+### 2.0.0
+
+Starting with version 2.0 no attempt to add loggers created by this module to
+rapidus is made. A Logger instance is still created using the `mlogy` module
+but needs to be explicitly added to the hierarchy.
+
 > As I cuddled the porcupine
 
 
